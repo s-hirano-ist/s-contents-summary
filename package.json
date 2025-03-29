@@ -9,7 +9,7 @@
 		"prisma:generate": "prisma generate --no-hints --no-engine --schema=./s-schema/schema.prisma",
 		"fetch:news": "tsx script/fetch-news.ts",
 		"generate:photo": "python script/generate_photo_path.py",
-		"generate:book": "node --loader ts-node/esm script/generate-book-data.ts",
+		"generate:book": "tsx script/generate-book-data.ts",
 		"postinstall": "pnpm prisma:generate"
 	},
 	"dependencies": {
@@ -20,6 +20,7 @@
 		"sharp": "0.33.5"
 	},
 	"devDependencies": {
+		"@googleapis/books": "^4.0.0",
 		"tsx": "4.19.3",
 		"typescript": "5.8.2"
 	}
