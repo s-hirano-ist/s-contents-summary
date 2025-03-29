@@ -10,6 +10,7 @@
 		"fetch:news": "tsx script/fetch-news.ts",
 		"generate:photo": "python script/generate_photo_path.py",
 		"generate:book": "tsx script/generate-book-data.ts",
+		"generate:gh-stars": "python gh-export-stars/src/main.py --user s-hirano-ist --output ./portfolio/gh-stars.json",
 		"postinstall": "pnpm prisma:generate"
 	},
 	"dependencies": {

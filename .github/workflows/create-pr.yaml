@@ -49,8 +49,6 @@ jobs:
 
       - run: pnpm generate:photo
       - run: pnpm generate:book
-      - run: pnpm license:summary
-      - run: bash checkLicense.sh
 
       - run: pnpm fmt:fix
 
@@ -58,11 +56,12 @@ jobs:
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         with:
           token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
-          branch: "create-pull-request/contents"
-          commit-message: "contents: update contents"
-          title: "contents: update news, photo, books, and license."
+          branch: "create-pull-request/s-contents-summary"
+          commit-message: "s-contents-summary updates"
+          title: "contents: s-contents-summary updates"
           body: |
-            This is an update PR of contents.
+            This is an update PR of s-contents-summary.
+
 
   gh-stars:
     runs-on: ubuntu-24.04

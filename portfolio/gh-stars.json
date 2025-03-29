@@ -1,5 +1,33 @@
 [
   {
+    "url": "https://github.com/textlint/textlint-plugin-mdx",
+    "description": "textlint plugin to lint MDX"
+  },
+  {
+    "url": "https://github.com/textlint/textlint",
+    "description": "The pluggable natural language linter for text and markdown."
+  },
+  {
+    "url": "https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing",
+    "description": "\u6280\u8853\u6587\u66f8\u5411\u3051\u306etextlint\u30eb\u30fc\u30eb\u30d7\u30ea\u30bb\u30c3\u30c8"
+  },
+  {
+    "url": "https://github.com/sbintuitions/safety-boundary-test",
+    "description": null
+  },
+  {
+    "url": "https://github.com/webrecorder/pywb",
+    "description": "Core Python Web Archiving Toolkit for replay and recording of web archives"
+  },
+  {
+    "url": "https://github.com/ArchiveTeam/grab-site",
+    "description": "The archivist's web crawler: WARC output, dashboard for all crawls, dynamic ignore patterns"
+  },
+  {
+    "url": "https://github.com/webrecorder/browsertrix-crawler",
+    "description": "Run a high-fidelity browser-based web archiving crawler in a single Docker container"
+  },
+  {
     "url": "https://github.com/vllm-project/vllm",
     "description": "A high-throughput and memory-efficient inference and serving engine for LLMs"
   },
