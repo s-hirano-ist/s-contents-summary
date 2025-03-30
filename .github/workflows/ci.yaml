@@ -7,6 +7,7 @@ on:
 jobs:
   biome:
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
     permissions: {}
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-biome
@@ -46,6 +47,7 @@ jobs:
 
   markdown:
     runs-on: ubuntu-24.04
+    timeout-minutes: 10
     permissions: {}
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}-markdown
