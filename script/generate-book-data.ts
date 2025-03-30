@@ -2,8 +2,8 @@ import { writeFileSync } from "node:fs";
 import { books as googleBooksApis } from "@googleapis/books";
 import { _books } from "../book/_original.ts";
 import {
-	appropriateRating,
 	appropriateIsbn,
+	appropriateRating,
 	isbnDuplication,
 	sleep,
 } from "./utils.ts";
