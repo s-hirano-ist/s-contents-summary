@@ -6,11 +6,15 @@
 	"packageManager": "pnpm@10.6.5",
 	"type": "module",
 	"scripts": {
-		"prisma:generate": "prisma generate --no-hints --no-engine --schema=./s-schema/schema.prisma",
+		"check:fmt": "biome ci *",
+		"check:fmt:fix": "biome check --write *",
+		"check:mark": "markdownlint-cli2 **/*.md",
+		"check:mark:fix": "markdownlint-cli2 **/*.md --fix",
 		"fetch:news": "tsx script/fetch-news.ts",
 		"generate:photo": "python script/generate_photo_path.py",
 		"generate:book": "tsx script/generate-book-data.ts",
 		"generate:gh-stars": "python gh-export-stars/src/main.py --user s-hirano-ist --output ./portfolio/gh-stars.json",
+		"prisma:generate": "prisma generate --no-hints --no-engine --schema=./s-schema/schema.prisma",
 		"postinstall": "pnpm prisma:generate"
 	},
 	"dependencies": {
@@ -21,6 +25,8 @@
 		"sharp": "0.33.5"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"markdownlint-cli2": "0.17.2",
 		"@googleapis/books": "^4.0.0",
 		"tsx": "4.19.3",
 		"typescript": "5.8.2"
