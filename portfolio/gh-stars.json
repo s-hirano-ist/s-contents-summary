@@ -1,5 +1,9 @@
 [
   {
+    "url": "https://github.com/eslint/eslint",
+    "description": "Find and fix problems in your JavaScript code."
+  },
+  {
     "url": "https://github.com/textlint/textlint-plugin-mdx",
     "description": "textlint plugin to lint MDX"
   },
