@@ -1,0 +1,87 @@
+name: ci
+permissions:
+  pull-requests: write
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  biome:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions: {}
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-biome
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          submodules: true
+          persist-credentials: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4
+        with:
+          node-version: "22.14.0"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4
+        with:
+          run_install: false
+
+      - name: Get pnpm directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
+
+      - name: Cache dependencies
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: pnpm i --frozen-lockfile
+
+      - run: pnpm check:fmt
+
+  markdown:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions: {}
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}-markdown
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          token: ${{ secrets.ACTIONS_GITHUB_TOKEN }}
+          submodules: true
+          persist-credentials: false
+
+      - name: Install Node.js
+        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4
+        with:
+          node-version: "22.14.0"
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@fe02b34f77f8bc703788d5817da081398fad5dd2 # v4
+        with:
+          run_install: false
+
+      - name: Get pnpm directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
+
+      - name: Cache dependencies
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4
+        with:
+          path: ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - run: pnpm i --frozen-lockfile
+
+      - name: markdownlint-cli2-action
+        uses: DavidAnson/markdownlint-cli2-action@v9
