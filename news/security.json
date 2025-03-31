@@ -233,6 +233,21 @@
 			"title": "海底ケーブル切断の脅威",
 			"quote": "",
 			"url": "https://gigazine.net/news/20250325-china-deep-sea-cable-cutter/"
+		},
+		{
+			"title": "脆弱性発覚時の対策",
+			"quote": "nextjs",
+			"url": "https://zenn.dev/t3tra/articles/c293410c7daf63"
+		},
+		{
+			"title": "ddos対策 cloudflare",
+			"quote": "",
+			"url": "https://www.publickey1.jp/blog/24/publickeyddosddos2.html"
+		},
+		{
+			"title": "カード情報は入力したときに流出するから保存させるべき",
+			"quote": "",
+			"url": "https://togetter.com/li/2444873"
 		}
 	]
 }
