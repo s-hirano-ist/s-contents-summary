@@ -456,7 +456,7 @@
     "description": "Simple Python version management"
   },
   {
-    "url": "https://github.com/apollographql/apollo-client-nextjs",
+    "url": "https://github.com/apollographql/apollo-client-integrations",
     "description": "Apollo Client support for the Next.js App Router"
   },
   {
