@@ -28,7 +28,7 @@ importers:
         specifier: 1.9.4
         version: 1.9.4
       '@googleapis/books':
-        specifier: ^4.0.0
+        specifier: 4.0.0
         version: 4.0.0
       markdownlint-cli2:
         specifier: 0.17.2
