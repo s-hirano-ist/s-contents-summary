@@ -1,5 +1,13 @@
 [
   {
+    "url": "https://github.com/marcoturi/fastify-boilerplate",
+    "description": "Fastify 5 application boilerplate based on clean architecture, domain-driven design, CQRS, functional programming, vertical slice architecture for building production-grade applications \ud83d\ude80"
+  },
+  {
+    "url": "https://github.com/line/tsr",
+    "description": "TypeScript Remove (tsr) is a utility that removes unused code from TypeScript projects \u2013 It's like tree shaking, but for source files"
+  },
+  {
     "url": "https://github.com/eslint/eslint",
     "description": "Find and fix problems in your JavaScript code."
   },
@@ -9,7 +17,7 @@
   },
   {
     "url": "https://github.com/textlint/textlint",
-    "description": "The pluggable natural language linter for text and markdown."
+    "description": "textlint is the pluggable linter for natural language text."
   },
   {
     "url": "https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing",
@@ -456,7 +464,7 @@
     "description": "Simple Python version management"
   },
   {
-    "url": "https://github.com/apollographql/apollo-client-nextjs",
+    "url": "https://github.com/apollographql/apollo-client-integrations",
     "description": "Apollo Client support for the Next.js App Router"
   },
   {
