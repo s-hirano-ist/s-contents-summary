@@ -472,6 +472,21 @@
 			"title": "CMMI",
 			"quote": "能力成熟度レベル",
 			"url": "https://www.layers.co.jp/terms/cmmi/"
+		},
+		{
+			"title": "評価駆動開発",
+			"quote": "",
+			"url": "https://tech.layerx.co.jp/entry/2024/12/12/191131"
+		},
+		{
+			"title": "プロダクトエンジニア",
+			"quote": "",
+			"url": "https://codezine.jp/article/detail/20246"
+		},
+		{
+			"title": "ドメイン知識とプロンプトチューニングとソフトウェアエンジニアリング",
+			"quote": "",
+			"url": "https://tech.algomatic.jp/entry/2025/03/31/192241"
 		}
 	]
 }
