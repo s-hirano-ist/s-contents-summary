@@ -258,6 +258,21 @@
 			"title": "pythonは悪意のあるコードを差し込みやすい",
 			"quote": "",
 			"url": "https://techtarget.itmedia.co.jp/tt/news/2411/13/news01.html"
+		},
+		{
+			"title": "ドメインは最新か確認すべし",
+			"quote": "",
+			"url": "https://zenn.dev/chot/articles/b9b74f8fdf0145"
+		},
+		{
+			"title": "AIクロールを無限迷路に",
+			"quote": "cloudflare AI Labyrinth",
+			"url": "https://gigazine.net/news/20250324-cloudflare-ai-labyrinth/"
+		},
+		{
+			"title": "発信者番号偽装",
+			"quote": "",
+			"url": "https://scan.netsecurity.ne.jp/article/2025/04/08/52636.html"
 		}
 	]
 }
