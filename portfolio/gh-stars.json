@@ -1,5 +1,21 @@
 [
   {
+    "url": "https://github.com/janwilmake/openapi-mcp-server",
+    "description": "Allow AI to wade through complex OpenAPIs using Simple Language"
+  },
+  {
+    "url": "https://github.com/mastra-ai/mastra",
+    "description": "The TypeScript AI agent framework. \u26a1 Assistants, RAG, observability. Supports any LLM: GPT-4, Claude, Gemini, Llama."
+  },
+  {
+    "url": "https://github.com/DragomirAlin/openstack-mcp-server",
+    "description": "A lightweight and extensible service that enables AI assistants to securely execute OpenStack CLI commands via the Model Context Protocol (MCP)"
+  },
+  {
+    "url": "https://github.com/github/session-resume",
+    "description": "Annotate fields to be persisted on navigation away from the current page"
+  },
+  {
     "url": "https://github.com/marcoturi/fastify-boilerplate",
     "description": "Fastify 5 application boilerplate based on clean architecture, domain-driven design, CQRS, functional programming, vertical slice architecture for building production-grade applications \ud83d\ude80"
   },
@@ -53,7 +69,7 @@
   },
   {
     "url": "https://github.com/ollama/ollama",
-    "description": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 3, and other large language models."
+    "description": "Get up and running with Llama 3.3, DeepSeek-R1, Phi-4, Gemma 3, Mistral Small 3.1 and other large language models."
   },
   {
     "url": "https://github.com/langgenius/dify",
@@ -218,10 +234,6 @@
   {
     "url": "https://github.com/suzuki-shunsuke/ghalint",
     "description": "GitHub Actions linter"
-  },
-  {
-    "url": "https://github.com/github/session-resume",
-    "description": "Annotate fields to be persisted on navigation away from the current page"
   },
   {
     "url": "https://github.com/polemius/recoil-persist",
