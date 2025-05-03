@@ -1,5 +1,9 @@
 [
   {
+    "url": "https://github.com/eslint/config-inspector",
+    "description": "A visual tool for inspecting and understanding your ESLint flat configs."
+  },
+  {
     "url": "https://github.com/janwilmake/openapi-mcp-server",
     "description": "Allow AI to wade through complex OpenAPIs using Simple Language"
   },
