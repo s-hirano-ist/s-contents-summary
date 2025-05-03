@@ -189,6 +189,11 @@
 			"title": "関係ない内容をRAGに入れることで精度が上がる",
 			"quote": "",
 			"url": "https://zenn.dev/knowledgesense/articles/7a8e9aafe08d35"
+		},
+		{
+			"title": "test 2",
+			"quote": "",
+			"url": "https://example.com"
 		}
 	]
 }
