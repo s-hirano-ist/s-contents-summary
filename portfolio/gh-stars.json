@@ -1,5 +1,21 @@
 [
   {
+    "url": "https://github.com/igordanchenko/yet-another-react-lightbox-lite",
+    "description": "Lightweight React lightbox component"
+  },
+  {
+    "url": "https://github.com/igordanchenko/react-photo-album",
+    "description": "Responsive photo gallery component for React"
+  },
+  {
+    "url": "https://github.com/igordanchenko/yet-another-react-lightbox",
+    "description": "Modern React lightbox component"
+  },
+  {
+    "url": "https://github.com/MinJieLiu/react-photo-view",
+    "description": "An exquisite React photo preview component."
+  },
+  {
     "url": "https://github.com/eslint/config-inspector",
     "description": "A visual tool for inspecting and understanding your ESLint flat configs."
   },
