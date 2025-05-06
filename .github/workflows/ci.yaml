@@ -84,4 +84,4 @@ jobs:
       - run: pnpm i --frozen-lockfile
 
       - name: markdownlint-cli2-action
-        uses: DavidAnson/markdownlint-cli2-action@5b7c9f74fec47e6b15667b2cc23c63dff11e449e # v9
+        uses: DavidAnson/markdownlint-cli2-action@05f32210e84442804257b2a6f20b273450ec8265 # v19
