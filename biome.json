@@ -2,11 +2,7 @@
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"organizeImports": { "enabled": true },
 	"files": {
-		"ignore": [
-			"gh-export-stars/**/*",
-			"portfolio/gh-stars.json",
-			"s-schema/generated/**"
-		]
+		"ignore": ["gh-export-stars/**/*", "portfolio/gh-stars.json", "src/**"]
 	},
 	"linter": { "enabled": false },
 	"vcs": {
