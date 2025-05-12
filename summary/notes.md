@@ -1,3 +1,9 @@
+---
+heading: notes
+description: メモ
+draft: true
+---
+
 # デザインコンポーネント
 
 shadcn = 「Radix系ヘッドレスコンポーネント」＋「Tailwind CSS」＋「コード所有型UIライブラリ」
