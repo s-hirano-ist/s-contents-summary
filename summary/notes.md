@@ -8,11 +8,11 @@ draft: true
 
 shadcn = 「Radix系ヘッドレスコンポーネント」＋「Tailwind CSS」＋「コード所有型UIライブラリ」
 
-https://zenn.dev/kazu1/articles/07d88ded5e7209
+<https://zenn.dev/kazu1/articles/07d88ded5e7209>
 
 類似サービス
 
-https://zenn.dev/kt83/articles/02e19a057ae9ae
+<https://zenn.dev/kt83/articles/02e19a057ae9ae>
 
 メリット
 
