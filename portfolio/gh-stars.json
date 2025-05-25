@@ -1,5 +1,33 @@
 [
   {
+    "url": "https://github.com/VoltAgent/voltagent",
+    "description": "Open Source TypeScript AI Agent Framework"
+  },
+  {
+    "url": "https://github.com/mcp-use/mcp-use",
+    "description": "mcp-use is the easiest way to interact with mcp servers with custom agents"
+  },
+  {
+    "url": "https://github.com/WordPress/gutenberg",
+    "description": "The Block Editor project for WordPress and beyond. Plugin is available from the official repository."
+  },
+  {
+    "url": "https://github.com/igordanchenko/yet-another-react-lightbox-lite",
+    "description": "Lightweight React lightbox component"
+  },
+  {
+    "url": "https://github.com/igordanchenko/react-photo-album",
+    "description": "Responsive photo gallery component for React"
+  },
+  {
+    "url": "https://github.com/igordanchenko/yet-another-react-lightbox",
+    "description": "Modern React lightbox component"
+  },
+  {
+    "url": "https://github.com/MinJieLiu/react-photo-view",
+    "description": "An exquisite React photo preview component."
+  },
+  {
     "url": "https://github.com/eslint/config-inspector",
     "description": "A visual tool for inspecting and understanding your ESLint flat configs."
   },
@@ -706,10 +734,6 @@
   {
     "url": "https://github.com/donnemartin/system-design-primer",
     "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards."
-  },
-  {
-    "url": "https://github.com/blackholeearth/Win10_BrightnessSlider",
-    "description": "this app puts a Monitor Brightness icon on Taskbar Tray.  for win 7, 8, 10, 11"
   },
   {
     "url": "https://github.com/satnaing/astro-paper",
