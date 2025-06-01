@@ -201,6 +201,11 @@
 			"title": "これから必要になるエンジニア像",
 			"quote": "",
 			"url": "https://zenn.dev/aoi_umigishi/articles/496ea407873aee"
+		},
+		{
+			"title": "プロンプトインジェクション対策",
+			"quote": "",
+			"url": "https://blog.flatt.tech/entry/prompt_injection"
 		}
 	]
 }

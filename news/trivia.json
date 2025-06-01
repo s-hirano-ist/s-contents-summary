@@ -645,6 +645,21 @@
 			"title": "猫は液体",
 			"quote": "",
 			"url": "https://nazology.kusuguru.co.jp/archives/169827"
+		},
+		{
+			"title": "wslのコマンドがわかりづらい",
+			"quote": "",
+			"url": "https://blog.yr32.net/post/wsl-uninstall-is-uninstall/"
+		},
+		{
+			"title": "否定表現は認知負荷が高い",
+			"quote": "",
+			"url": "https://jp.quora.com/nande-if-de-sumu-tokoro-ni-unless-ga-aru-nde-suka-1-tsu-de-yoku-nai-desu-ka/answers/89139468?ch=10&oid=89139468&share=2489d15f&srid=5g3qr&target_type=answer"
+		},
+		{
+			"title": "ssh keyにカスタム文字列を入れよう",
+			"quote": "",
+			"url": "https://blog.akiym.com/entry/2024/03/24/210524"
 		}
 	]
 }
