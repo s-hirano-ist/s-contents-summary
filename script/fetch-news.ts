@@ -1,5 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "../src/generated/client";
 import dotenv from "dotenv";
 
 const prisma = new PrismaClient();
