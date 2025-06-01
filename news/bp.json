@@ -26,6 +26,11 @@
 			"title": "ウェブデザインチェックリスト",
 			"quote": "",
 			"url": "https://photoshopvip.net/161401"
+		},
+		{
+			"title": "OSS選定基準",
+			"quote": "世界的には何が人気なんだろう？\r\n→roadmap.sh\r\nAとBとCだと、どれが人気なんだろう？\r\n→GitHub Star History\r\nAとBだと、どちらが人気なんだろう？\r\n→OSS Insight\r\n実際使われてるのかな？\r\n→npm trends",
+			"url": "https://zenn.dev/praha/articles/be0a8e3e1d625f"
 		}
 	]
 }
