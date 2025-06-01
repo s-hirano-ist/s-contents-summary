@@ -44,7 +44,7 @@ jobs:
       - name: run script
         run: pnpm fetch:news
         env:
-          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}
+          POSTGRES_URL: ${{ secrets.DATABASE_URL }}
           USERNAME_TO_EXPORT: ${{ secrets.USERNAME_TO_EXPORT }}
 
       - run: pnpm generate:photo
