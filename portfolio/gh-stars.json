@@ -397,7 +397,7 @@
   },
   {
     "url": "https://github.com/apollographql/apollo-client",
-    "description": ":rocket: \u00a0A fully-featured, production ready caching GraphQL client for every UI framework and GraphQL server."
+    "description": "The industry-leading GraphQL client for TypeScript, JavaScript, React, Vue, Angular, and more. Apollo Client delivers powerful caching, intuitive APIs, and comprehensive developer tools to accelerate your app development."
   },
   {
     "url": "https://github.com/prometheus/alertmanager",
