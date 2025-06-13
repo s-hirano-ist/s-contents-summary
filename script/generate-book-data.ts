@@ -18,6 +18,7 @@ const api = googleBooksApis({
 });
 
 type BookType = {
+	ISBN: string;
 	title: string;
 	subTitle: string;
 	authors: string[];
@@ -59,6 +60,7 @@ try {
 		).replace("http://", "https://");
 
 		books.push({
+			ISBN: _book.ISBN,
 			title: book.data.items?.[0]?.volumeInfo?.title ?? _book.title,
 			subTitle: book.data.items?.[0]?.volumeInfo?.subtitle ?? "",
 			authors: book.data.items?.[0]?.volumeInfo?.authors ?? [],
