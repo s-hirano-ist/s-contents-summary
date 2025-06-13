@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"markdownlint-cli2": "0.18.1",
-		"@googleapis/books": "4.0.0",
+		"@googleapis/books": "5.0.1",
 		"tsx": "4.20.2",
 		"typescript": "5.8.3"
 	}
