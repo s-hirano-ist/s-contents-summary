@@ -10,7 +10,7 @@ import {
 
 const MAX_RATING = 5;
 const FILE_PATH = "book/data.gen.json";
-const NO_IMAGE_SRC = "https://s-hirano.com/notFound.png";
+const NO_IMG_SRC = "https://s-hirano.com/notFound.png";
 const NOT_FOUND_HREF = "https://s-hirano.com/404";
 
 const api = googleBooksApis({
@@ -20,13 +20,16 @@ const api = googleBooksApis({
 type BookType = {
 	ISBN: string;
 	title: string;
-	subTitle: string;
-	authors: string[];
-	description: string;
-	tags: string[];
-	imageSrc: string;
-	href: string;
+
+	googleTitle: string;
+	googleSubtitle: string;
+	googleAuthors: string[];
+	googleDescription: string;
+	googleImgSrc: string;
+	googleHref: string;
+
 	rating: number;
+	tags: string[];
 }[];
 
 console.log("Started fetching book data from Google Books APIs...");
@@ -46,13 +49,13 @@ try {
 				`Rating must be an integer & between 1 and ${MAX_RATING}`,
 			);
 		const book = await api.volumes.list({ q: `isbn:${_book.ISBN}` });
-		// do not run parallelly due to access limit to Google Books APIs
+		// do not run parallel due to access limit to Google Books APIs
 		// only 100 access per one minute is allowed
 
 		await sleep(600);
 
-		const httpsImageSrc = (
-			book.data.items?.[0]?.volumeInfo?.imageLinks?.thumbnail ?? NO_IMAGE_SRC
+		const httpsImgSrc = (
+			book.data.items?.[0]?.volumeInfo?.imageLinks?.thumbnail ?? NO_IMG_SRC
 		).replace("http://", "https://");
 
 		const httpsHref = (
@@ -61,14 +64,17 @@ try {
 
 		books.push({
 			ISBN: _book.ISBN,
-			title: book.data.items?.[0]?.volumeInfo?.title ?? _book.title,
-			subTitle: book.data.items?.[0]?.volumeInfo?.subtitle ?? "",
-			authors: book.data.items?.[0]?.volumeInfo?.authors ?? [],
-			description:
+			title: _book.title,
+
+			googleTitle: book.data.items?.[0]?.volumeInfo?.title ?? _book.title,
+			googleSubtitle: book.data.items?.[0]?.volumeInfo?.subtitle ?? "",
+			googleAuthors: book.data.items?.[0]?.volumeInfo?.authors ?? [],
+			googleDescription:
 				book.data.items?.[0]?.volumeInfo?.description ?? "No description",
+			googleImgSrc: httpsImgSrc,
+			googleHref: httpsHref,
+
 			tags: _book.tags,
-			imageSrc: httpsImageSrc,
-			href: httpsHref,
 			rating: _book.rating,
 		});
 		if (book.status !== 200) throw new Error("Status code not 200");
