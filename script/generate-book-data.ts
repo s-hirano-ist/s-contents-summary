@@ -75,6 +75,7 @@ try {
 		console.log("status of", _book.title, ": ", book.status);
 	}
 
+	books.sort((a, b) => a.ISBN.localeCompare(b.ISBN));
 	writeFileSync(FILE_PATH, JSON.stringify(books));
 } catch (error) {
 	console.error(error);
