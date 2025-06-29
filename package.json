@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"author": "s-hirano-ist",
 	"description": "Extract data from db and write to file.",
-	"packageManager": "pnpm@10.12.1",
+	"packageManager": "pnpm@10.12.4",
 	"type": "module",
 	"scripts": {
 		"check:fmt": "biome ci *",
