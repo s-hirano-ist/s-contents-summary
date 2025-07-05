@@ -19,31 +19,15 @@ jobs:
           submodules: true
           persist-credentials: false
 
-      - name: Install Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: "22.17.0"
+          bun-version-file: "package.json"
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4
-        with:
-          run_install: false
+      - name: Install dependencies
+        run: bun install
 
-      - name: Get pnpm directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
-
-      - name: Cache dependencies
-        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - run: pnpm i --frozen-lockfile
-
-      - run: pnpm biome:ci
+      - run: bun biome:ci
 
   markdown:
     runs-on: ubuntu-24.04
@@ -59,29 +43,13 @@ jobs:
           submodules: true
           persist-credentials: false
 
-      - name: Install Node.js
-        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: "22.17.0"
+          bun-version-file: "package.json"
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4
-        with:
-          run_install: false
-
-      - name: Get pnpm directory
-        shell: bash
-        run: |
-          echo "STORE_PATH=$(pnpm store path --silent)" >> "$GITHUB_ENV"
-
-      - name: Cache dependencies
-        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4
-        with:
-          path: ${{ env.STORE_PATH }}
-          key: ${{ runner.os }}-node-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - run: pnpm i --frozen-lockfile
+      - name: Install dependencies
+        run: bun install
 
       - name: markdownlint-cli2-action
         uses: DavidAnson/markdownlint-cli2-action@992badcdf24e3b8eb7e87ff9287fe931bcb00c6e # v20

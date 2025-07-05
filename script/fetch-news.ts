@@ -1,5 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
-import dotenv from "dotenv";
+import { readFile, writeFile } from "fs/promises";
 import { PrismaClient } from "../src/generated/client";
 
 const prisma = new PrismaClient();
@@ -23,8 +22,6 @@ type BodyItem = {
 	quote: string;
 	url: string;
 };
-
-dotenv.config();
 
 const OUTPUT_PATH = "news";
 const USERNAME_TO_EXPORT = process.env.USERNAME_TO_EXPORT;
