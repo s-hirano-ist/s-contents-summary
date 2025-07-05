@@ -1,4 +1,5 @@
 {
+	"root": false,
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"files": {
@@ -9,7 +10,23 @@
 			"!**/src/**"
 		]
 	},
-	"linter": { "enabled": false },
+	"linter": {
+		"enabled": false,
+		"rules": {
+			"style": {
+				"noParameterAssign": "error",
+				"useAsConstAssertion": "error",
+				"useDefaultParameterLast": "error",
+				"useEnumInitializers": "error",
+				"useSelfClosingElements": "error",
+				"useSingleVarDeclarator": "error",
+				"noUnusedTemplateLiteral": "error",
+				"useNumberNamespace": "error",
+				"noInferrableTypes": "error",
+				"noUselessElse": "error"
+			}
+		}
+	},
 	"vcs": {
 		"enabled": true,
 		"clientKind": "git",
