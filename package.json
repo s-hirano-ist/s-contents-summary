@@ -18,7 +18,7 @@
 	},
 	"dependencies": {
 		"@prisma/client": "6.11.1",
-		"@googleapis/books": "4.0.0"
+		"@googleapis/books": "5.0.1"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.0.6",
