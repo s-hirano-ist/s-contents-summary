@@ -3,30 +3,29 @@
 	"version": "1.0.0",
 	"author": "s-hirano-ist",
 	"description": "Extract data from db and write to file.",
-	"packageManager": "pnpm@10.12.4",
 	"type": "module",
 	"scripts": {
-		"biome:ci": "biome ci *",
-		"biome:fix": "biome check --write *",
+		"biome:ci": "biome ci --config-path=biome.json",
+		"biome:fix": "bun biome check --write  --config-path=biome.json",
 		"mark:check": "markdownlint-cli2 **/*.md",
 		"mark:fix": "markdownlint-cli2 **/*.md --fix",
-		"fetch:news": "tsx script/fetch-news.ts",
-		"generate:photo": "python script/generate_photo_path.py",
-		"generate:book": "tsx script/generate-book-data.ts",
+		"fetch:news": "bun script/fetch-news.ts",
+		"generate:photo": "bun script/generate-photo-path.ts",
+		"generate:book": "bun script/generate-book-data.ts",
 		"generate:gh-stars": "python gh-export-stars/src/main.py --user s-hirano-ist --output ./portfolio/gh-stars.json",
 		"prisma:generate": "prisma generate --no-hints --no-engine --schema=./s-schema/schema.prisma",
-		"postinstall": "pnpm prisma:generate"
+		"postinstall": "bun prisma:generate"
 	},
 	"dependencies": {
 		"@prisma/client": "6.11.1",
-		"dotenv": "17.0.1",
-		"prisma": "6.11.1"
+		"@googleapis/books": "4.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.0.6",
-		"markdownlint-cli2": "0.18.1",
-		"@googleapis/books": "4.0.0",
-		"tsx": "4.20.3",
-		"typescript": "5.8.3"
+		"@types/bun": "1.2.18",
+		"markdownlint-cli2": "0.18.1"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
 	}
 }
