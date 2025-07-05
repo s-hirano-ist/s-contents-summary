@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-node-
       - run: pnpm i --frozen-lockfile
 
-      - run: pnpm check:fmt
+      - run: pnpm biome:ci
 
   markdown:
     runs-on: ubuntu-24.04
