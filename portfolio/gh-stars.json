@@ -1,5 +1,17 @@
 [
   {
+    "url": "https://github.com/javierbrea/eslint-plugin-boundaries",
+    "description": "Eslint plugin checking architecture boundaries between elements"
+  },
+  {
+    "url": "https://github.com/google-gemini/gemini-cli",
+    "description": "An open-source AI agent that brings the power of Gemini directly into your terminal."
+  },
+  {
+    "url": "https://github.com/gmo-internet/gpu-cloud-examples",
+    "description": "GMO GPU CLOUD Examples"
+  },
+  {
     "url": "https://github.com/Inoue416/tech-tok",
     "description": "\u8a18\u8ff0\u30d6\u30ed\u30b0\u3092\u7e26\u30b9\u30ef\u30a4\u30d7\u3067\u898b\u308b\u3053\u3068\u304c\u3067\u304d\u308b\u30a2\u30d7\u30ea\u30b1\u30fc\u30b7\u30e7\u30f3"
   },
@@ -113,7 +125,7 @@
   },
   {
     "url": "https://github.com/langgenius/dify",
-    "description": "Dify is an open-source LLM app development platform. Dify's intuitive interface combines AI workflow, RAG pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype to production."
+    "description": "Production-ready platform for agentic workflow development."
   },
   {
     "url": "https://github.com/ArchiveBox/ArchiveBox",
@@ -781,7 +793,7 @@
   },
   {
     "url": "https://github.com/watalabo/WiPiCap",
-    "description": "WiPiCap: DIg into Wi-Fi Beamforming Report"
+    "description": "WiPiCap: Dig into Wi-Fi Beamforming Report"
   },
   {
     "url": "https://github.com/sub-t/blog-template",
