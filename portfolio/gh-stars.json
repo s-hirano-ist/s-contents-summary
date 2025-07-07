@@ -1,5 +1,9 @@
 [
   {
+    "url": "https://github.com/mhart/mcp-hono-stateless",
+    "description": "An example Hono MCP server using Streamable HTTP"
+  },
+  {
     "url": "https://github.com/javierbrea/eslint-plugin-boundaries",
     "description": "Eslint plugin checking architecture boundaries between elements"
   },
