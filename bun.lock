@@ -4,16 +4,16 @@
     "": {
       "name": "s-contents-summary",
       "dependencies": {
+        "@googleapis/books": "4.0.0",
         "@prisma/client": "6.11.1",
       },
       "devDependencies": {
         "@biomejs/biome": "2.0.6",
-        "@googleapis/books": "4.0.0",
         "@types/bun": "1.2.18",
         "markdownlint-cli2": "0.18.1",
       },
       "peerDependencies": {
-        "typescript": "^5",
+        "typescript": "^5.8.3",
       },
     },
   },
